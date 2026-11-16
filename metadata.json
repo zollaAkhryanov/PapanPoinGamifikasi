@@ -1,0 +1,6 @@
+{
+  "name": "Akademi Progres",
+  "description": "Platform pemantauan progres belajar, poin kompetensi, peringkat peserta, dan panel mentor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
