@@ -22,16 +22,6 @@ Berlaku untuk mode placeholder frontend maupun data demo backend (mode memori / 
 ### Akun Mentor
 - **Username:** `budi.mentor` *(atau `mentor@akademi.id`)*
 - **Kata Sandi:** `mentor123`
-
-## Mode Supabase (supabase/seed.sql)
-
-### Akun Peserta untuk demo
-- **Username:** `raka.pratama` *(atau `raka.pratama@akademi.id`)*
-- **Kata Sandi:** `Raka123`
-
-### Akun Mentor
-- **Username:** `budi.mentor` *(atau `mentor@akademi.id`)*
-- **Kata Sandi:** `Budi123`
 ---
 
 ## Cara Menjalankan di VS Code (Lokal)
