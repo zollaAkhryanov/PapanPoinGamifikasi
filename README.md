@@ -15,13 +15,13 @@ Aplikasi web berbasis **React + TypeScript + Tailwind CSS + Vite** (frontend) da
 
 Berlaku untuk mode placeholder frontend maupun data demo backend (mode memori / `supabase/seed.sql`).
 
-### Akun Peserta
+### Akun Peserta untuk demo
 - **Username:** `raka.pratama` *(atau `raka.pratama@akademi.id`)*
-- **Kata Sandi:** `password123`
+- **Kata Sandi:** `Raka123`
 
 ### Akun Mentor
 - **Username:** `budi.mentor` *(atau `mentor@akademi.id`)*
-- **Kata Sandi:** `mentor123`
+- **Kata Sandi:** `Budi123`
 
 ---
 
