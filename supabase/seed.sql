@@ -12,7 +12,7 @@ INSERT INTO activity_categories (name, description, default_points)
 VALUES
   ('Modul', 'Menyelesaikan modul belajar', 50),
   ('Tugas', 'Mengumpulkan tugas', 100),
-  ('Evaluasi', 'Hasil evaluasi atau ujian', 150),
+  ('Evaluasi', 'Hasil evaluasi/ujian', 150),
   ('Mentoring', 'Sesi mentoring', 75)
 ON CONFLICT DO NOTHING;
 
@@ -82,45 +82,45 @@ AND mentor_id IS NULL;
 
 WITH demo_points(username, category_name, title, points) AS (
   VALUES
-  ('Dimas Wijaya'::text, 'Modul', 'Akumulasi penyelesaian modul', 900),
-  ('Dimas Wijaya', 'Tugas', 'Akumulasi penyelesaian tugas', 700),
-  ('Dimas Wijaya', 'Evaluasi', 'Akumulasi hasil evaluasi', 350),
+  ('dimas.wijaya'::text, 'Modul', 'Akumulasi penyelesaian modul', 900),
+  ('dimas.wijaya', 'Tugas', 'Akumulasi penyelesaian tugas', 700),
+  ('dimas.wijaya', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 350),
 
-  ('Putri Amelia', 'Modul', 'Akumulasi penyelesaian modul', 750),
-  ('Putri Amelia', 'Tugas', 'Akumulasi penyelesaian tugas', 600),
-  ('Putri Amelia', 'Evaluasi', 'Akumulasi hasil evaluasi', 300),
+  ('putri.amelia', 'Modul', 'Akumulasi penyelesaian modul', 750),
+  ('putri.amelia', 'Tugas', 'Akumulasi penyelesaian tugas', 600),
+  ('putri.amelia', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 300),
 
-  ('Ayu Lestari', 'Modul', 'Akumulasi penyelesaian modul', 700),
-  ('Ayu Lestari', 'Tugas', 'Akumulasi penyelesaian tugas', 550),
-  ('Ayu Lestari', 'Evaluasi', 'Akumulasi hasil evaluasi', 250),
+  ('ayu.lestari', 'Modul', 'Akumulasi penyelesaian modul', 700),
+  ('ayu.lestari', 'Tugas', 'Akumulasi penyelesaian tugas', 550),
+  ('ayu.lestari', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 250),
 
-  ('Nadia Kusuma', 'Modul', 'Akumulasi penyelesaian modul', 700),
-  ('Nadia Kusuma', 'Tugas', 'Akumulasi penyelesaian tugas', 550),
-  ('Nadia Kusuma', 'Evaluasi', 'Akumulasi hasil evaluasi', 250),
+  ('nadia.kusuma', 'Modul', 'Akumulasi penyelesaian modul', 700),
+  ('nadia.kusuma', 'Tugas', 'Akumulasi penyelesaian tugas', 550),
+  ('nadia.kusuma', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 250),
 
-  ('Andi Saputra', 'Modul', 'Akumulasi penyelesaian modul', 650),
-  ('Andi Saputra', 'Tugas', 'Akumulasi penyelesaian tugas', 500),
-  ('Andi Saputra', 'Evaluasi', 'Akumulasi hasil evaluasi', 250),
+  ('andi.saputra', 'Modul', 'Akumulasi penyelesaian modul', 650),
+  ('andi.saputra', 'Tugas', 'Akumulasi penyelesaian tugas', 500),
+  ('andi.saputra', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 250),
 
-  ('Bagus Setiawan', 'Modul', 'Akumulasi penyelesaian modul', 600),
-  ('Bagus Setiawan', 'Tugas', 'Akumulasi penyelesaian tugas', 450),
-  ('Bagus Setiawan', 'Evaluasi', 'Akumulasi hasil evaluasi', 200),
+  ('bagus.setiawan', 'Modul', 'Akumulasi penyelesaian modul', 600),
+  ('bagus.setiawan', 'Tugas', 'Akumulasi penyelesaian tugas', 450),
+  ('bagus.setiawan', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 200),
 
-  ('Fajar Nugroho', 'Modul', 'Akumulasi penyelesaian modul', 550),
-  ('Fajar Nugroho', 'Tugas', 'Akumulasi penyelesaian tugas', 450),
-  ('Fajar Nugroho', 'Evaluasi', 'Akumulasi hasil evaluasi', 200),
+  ('fajar.nugroho', 'Modul', 'Akumulasi penyelesaian modul', 550),
+  ('fajar.nugroho', 'Tugas', 'Akumulasi penyelesaian tugas', 450),
+  ('fajar.nugroho', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 200),
 
-  ('Rizky Firmansyah', 'Modul', 'Akumulasi penyelesaian modul', 550),
-  ('Rizky Firmansyah', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
-  ('Rizky Firmansyah', 'Evaluasi', 'Akumulasi hasil evaluasi', 200),
+  ('rizky.firmansyah', 'Modul', 'Akumulasi penyelesaian modul', 550),
+  ('rizky.firmansyah', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
+  ('rizky.firmansyah', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 200),
 
-  ('Raka Pratama', 'Modul', 'Akumulasi penyelesaian modul', 500),
-  ('Raka Pratama', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
-  ('Raka Pratama', 'Evaluasi', 'Akumulasi hasil evaluasi', 200),
+  ('raka.pratama', 'Modul', 'Akumulasi penyelesaian modul', 500),
+  ('raka.pratama', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
+  ('raka.pratama', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 200),
 
-  ('Siti Rahmawati', 'Modul', 'Akumulasi penyelesaian modul', 500),
-  ('Siti Rahmawati', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
-  ('Siti Rahmawati', 'Evaluasi', 'Akumulasi hasil evaluasi', 200)
+  ('siti.rahma', 'Modul', 'Akumulasi penyelesaian modul', 500),
+  ('siti.rahma', 'Tugas', 'Akumulasi penyelesaian tugas', 400),
+  ('siti.rahma', 'Evaluasi', 'Akumulasi penyelesaian evaluasi', 200)
 )
 
 INSERT INTO point_entries
