@@ -1,4 +1,3 @@
-
 -- =========================================================
 -- SEED DATA PAPAN POIN GAMIFIKASI
 -- Anggota 3: Database & DevOps
@@ -134,7 +133,7 @@ SELECT
   d.points,
   m.id
 FROM demo_points d
-JOIN users u ON u.name = d.username
+JOIN users u ON u.username = d.username
 JOIN activity_categories c ON c.name = d.category_name
 CROSS JOIN users m
 WHERE m.username = 'budi.mentor'
